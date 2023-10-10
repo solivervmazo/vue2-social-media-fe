@@ -1,0 +1,48 @@
+<template>
+  <v-card class="rounded-lg" flat>
+    <v-card-text class="pa-5">
+      <v-form>
+        <v-row>
+          <v-col cols="12" sm="3">
+            <v-select
+              class="rounded-lg text-capitalize"
+              hide-details
+              :label="lang(`show`)"
+              outlined
+            />
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-select
+              class="rounded-lg text-capitalize"
+              hide-details
+              :label="lang(`order by`)"
+              outlined
+            />
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-select
+              class="rounded-lg text-capitalize"
+              hide-details
+              :label="lang(`show`)"
+              outlined
+            />
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-btn block class="rounded-lg" color="dm__primary" dark x-large>
+              <span class="text-capitalize caption font-weight-medium">
+                {{ lang(`filter streams`) }}!
+              </span>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-form>
+    </v-card-text>
+  </v-card>
+</template>
+
+
+<style lang="scss">
+.v-input .v-label {
+  line-height: 30px !important;
+}
+</style>
